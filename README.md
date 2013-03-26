@@ -1,7 +1,7 @@
 PHPStorm Artisan Command Line Helper
 ====================================
 
-This xml file will provide you with aliases for artisan (the Laravel command line utility)  in PHPStorm's command line tools console. Once installed on your machine it will provide autocomplete functionality for artisan commands when executed in the PHPStorm command line tools console.
+This xml file will provide you with aliases for artisan (the Laravel command line utility) in PHPStorm's console. Once installed on your machine it will provide autocomplete functionality for artisan commands when executed in the PHPStorm command line tools console.
 
 A few things to note
 --------------------
