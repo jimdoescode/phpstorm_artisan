@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<framework xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemas/frameworkDescriptionVersion1.1.3.xsd" name="Artisan" invoke="php artisan" alias="artisan" enabled="true" version="2">
+    <command>
+        <name>help</name>
+        <help>Displays help for a command</help>
+        <params>[command]</params>
+        <optionsBefore>
+            <option name="--xml" pattern="space">
+                <help>To output help as XML</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>list</name>
+        <help>Lists commands</help>
+        <params>[namespace]</params>
+        <optionsBefore>
+            <option name="--xml" pattern="space">
+                <help>To output help as XML</help>
+            </option>
+            <option name="--raw" pattern="space">
+                <help>To output raw command list</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>optimize</name>
+        <help>Optimize the framework for better performance</help>
+        <optionsBefore>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>routes</name>
+        <help>List all registered routes</help>
+        <optionsBefore>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>serve</name>
+        <help>Serve the application on the PHP development server</help>
+        <optionsBefore>
+            <option name="--host" pattern="equals">
+                <help>The host address to serve the application on. (default: "localhost")</help>
+            </option>
+            <option name="--port" pattern="equals">
+                <help>The port to serve the application on. (default: 8000)</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>tinker</name>
+        <help>Interact with your application</help>
+        <optionsBefore>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>workbench</name>
+        <help>Create a new package workbench</help>
+        <params>package</params>
+        <optionsBefore>
+            <option name="--plain" pattern="space">
+                <help>Skip creation of Laravel specific directories.</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>asset:publish</name>
+        <help>Publish a package's assets to the public directory</help>
+        <params>[package]</params>
+        <optionsBefore>
+            <option name="--bench" pattern="equals">
+                <help>The name of the workbench to publish</help>
+            </option>
+            <option name="--path" pattern="equals">
+                <help>The path to the configuration files</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>auth:reminders</name>
+        <help>Create a migration for the password reminders table</help>
+        <optionsBefore>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>cache:clear</name>
+        <help>Flush the application cache</help>
+        <optionsBefore>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>command:make</name>
+        <help>Create a new Artisan command</help>
+        <params>name</params>
+        <optionsBefore>
+            <option name="--path" pattern="equals">
+                <help>The path where the command should be stored</help>
+            </option>
+            <option name="--namespace" pattern="equals">
+                <help>The command namespace</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>config:publish</name>
+        <help>Publish a package's configuration to the application</help>
+        <params>package</params>
+        <optionsBefore>
+            <option name="--path" pattern="equals">
+                <help>The path to the configuration files</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>controller:make</name>
+        <help>Create a new resourceful controller</help>
+        <params>name</params>
+        <optionsBefore>
+            <option name="--only" pattern="equals">
+                <help>The methods that should be included</help>
+            </option>
+            <option name="--except" pattern="equals">
+                <help>The methods that should be excluded</help>
+            </option>
+            <option name="--path" pattern="equals">
+                <help>Where to place the controller</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>db:seed</name>
+        <help>Seed the database with records</help>
+        <optionsBefore>
+            <option name="--class" pattern="equals">
+                <help>The class name of the root seeder (default: "DatabaseSeeder")</help>
+            </option>
+            <option name="--database" pattern="equals">
+                <help>The database connection to seed</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>key:generate</name>
+        <help>Set the application key</help>
+        <optionsBefore>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>migrate</name>
+        <help>Run the database migrations</help>
+        <optionsBefore>
+            <option name="--bench" pattern="equals">
+                <help>The name of the workbench to migrate</help>
+            </option>
+            <option name="--database" pattern="equals">
+                <help>The database connection to use</help>
+            </option>
+            <option name="--path" pattern="equals">
+                <help>The path to migration files</help>
+            </option>
+            <option name="--package" pattern="equals">
+                <help>The package to migrate</help>
+            </option>
+            <option name="--pretend" pattern="space">
+                <help>Dump the SQL queries that would be run.</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>migrate:install</name>
+        <help>Create the migration repository</help>
+        <optionsBefore>
+            <option name="--database" pattern="equals">
+                <help>The database connection to use</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>migrate:make</name>
+        <help>Create a new migration file</help>
+        <params>name</params>
+        <optionsBefore>
+            <option name="--bench" pattern="equals">
+                <help>The workbench the migration belongs to</help>
+            </option>
+            <option name="--create" pattern="space">
+                <help>The table needs to be created</help>
+            </option>
+            <option name="--package" pattern="equals">
+                <help>The package the migration belongs to</help>
+            </option>
+            <option name="--path" pattern="equals">
+                <help>Where to store the migration</help>
+            </option>
+            <option name="--table" pattern="equals">
+                <help>The table to migrate</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>migrate:refresh</name>
+        <help>Reset and re-run all migrations</help>
+        <optionsBefore>
+            <option name="--database" pattern="equals">
+                <help>The database connection to use</help>
+            </option>
+            <option name="--seed" pattern="space">
+                <help>Indicates if the seed task should be re-run</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>migrate:reset</name>
+        <help>Rollback all database migrations</help>
+        <optionsBefore>
+            <option name="--database" pattern="equals">
+                <help>The database connection to use</help>
+            </option>
+            <option name="--pretend" pattern="space">
+                <help>Dump the SQL queries that would be run</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>migrate:rollback</name>
+        <help>Rollback the last database migration</help>
+        <optionsBefore>
+            <option name="--database" pattern="equals">
+                <help>The database connection to use</help>
+            </option>
+            <option name="--pretend" pattern="space">
+                <help>Dump the SQL queries that would be run</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>queue:listen</name>
+        <help>Listen to a given queue</help>
+        <params>[connection]</params>
+        <optionsBefore>
+            <option name="--queue" pattern="equals">
+                <help>The queue to listen on</help>
+            </option>
+            <option name="--delay" pattern="equals">
+                <help>Amount of time to delay failed jobs (default: 0)</help>
+            </option>
+            <option name="--memory" pattern="equals">
+                <help>The memory limit in megabytes (default: 128)</help>
+            </option>
+            <option name="--timeout" pattern="equals">
+                <help>Seconds a job may run before timing out (default: 60)</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>queue:work</name>
+        <help>Process the next job on a queue</help>
+        <params>[connection]</params>
+        <optionsBefore>
+            <option name="--queue" pattern="equals">
+                <help>The queue to listen on</help>
+            </option>
+            <option name="--delay" pattern="equals">
+                <help>Amount of time to delay failed jobs (default: 0)</help>
+            </option>
+            <option name="--memory" pattern="equals">
+                <help>The memory limit in megabytes (default: 128)</help>
+            </option>
+            <option name="--sleep" pattern="space">
+                <help>Whether the worker should sleep when no job is available</help>
+            </option>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+    <command>
+        <name>session:table</name>
+        <help>Create a migration for the session database table</help>
+        <optionsBefore>
+            <option name="--help" pattern="space">
+                <help>Display this help message</help>
+            </option>
+            <option name="--quiet" pattern="space">
+                <help>Do not output any message</help>
+            </option>
+            <option name="--verbose" pattern="space">
+                <help>Increase verbosity of messages</help>
+            </option>
+            <option name="--version" pattern="space">
+                <help>Display this application version</help>
+            </option>
+            <option name="--ansi" pattern="space">
+                <help>Force ANSI output</help>
+            </option>
+            <option name="--no-ansi" pattern="space">
+                <help>Disable ANSI output</help>
+            </option>
+            <option name="--no-interaction" pattern="space">
+                <help>Do not ask any interactive questions</help>
+            </option>
+            <option name="--env" pattern="equals">
+                <help>The environment the command should run under</help>
+            </option>
+        </optionsBefore>
+    </command>
+</framework>
