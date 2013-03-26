@@ -17,10 +17,7 @@ Installation
 - Linux: Place this file in ?
 - Windows: Place this file in ?
 
-Once the file is placed in the proper directory you can then open PHPStorm 6 and go to 
-	Preferences -> Command Line Tool Support
-
-There you will see the artisan tool. Make sure that it is enabled.
+Once the file is placed in the proper directory you can then open PHPStorm 6 and go to ```Preferences -> Command Line Tool Support``` there you will see the artisan tool. Make sure that it is enabled.
 
 Testing
 -------
