@@ -13,7 +13,7 @@ A few things to note
 Installation
 ------------
 
-- MacOSX: Place this file in ~/Library/Preferences/WebIde60/commandlinetools 
+- MacOSX: Place this file in ```~/Library/Preferences/WebIde60/commandlinetools``` 
 - Linux: Place this file in ?
 - Windows: Place this file in ?
 
