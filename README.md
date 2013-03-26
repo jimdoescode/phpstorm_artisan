@@ -6,6 +6,7 @@ This xml file will provide you with aliases for artisan (the Laravel command lin
 A few things to note
 --------------------
 
+- You must have Laravel 4 installed and properly configured for artisan to work correctly.
 - This only works for artisan in Laravel 4.
 - Your console must be in the same directory as the artisan file or you must create a global path to your artisan file.
 - Optional artisan parameters are marked in square brackets []. Required artisan parameters are not enclosed in brackets.
