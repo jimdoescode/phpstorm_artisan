@@ -23,10 +23,10 @@ Once the file is placed in the proper directory you can then open PHPStorm 6 and
 Testing
 -------
 
-Open the command line tools console.
-Type: artisan
+Open the command line tools console and begin typing ```artisan```.
 You should see a large list of options appear as a dropdown.
-Select artisan help and hit enter twice. (Don't worry if it complains about needing a parameter
+Select ```artisan help``` and hit enter twice. (Don't worry if it complains about needing a parameter after the first enter)
+
 You should see the artisan help options as if you had typed the command in your own terminal.
 
 If you see an error with some HTML you will need to open the Command line tool support window again ```Peferences -> Command Line Tool Support``` and edit the "Tool Path". Set a full path to your php binary instead of just "php". 
