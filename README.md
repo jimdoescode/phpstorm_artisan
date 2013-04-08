@@ -14,9 +14,11 @@ A few things to note
 Installation
 ------------
 
-- MacOSX: Place this file in ```~/Library/Preferences/WebIde60/commandlinetools``` 
-- Linux: Place this file in ?
-- Windows: Place this file in ?
+- MacOSX: Place this file in ```~/Library/Preferences/WebIdeXX/commandlinetools``` 
+- Linux: Place this file in ```~/.WebIdeXX/config/commandlinetools```
+- Windows: Place this file in ```<User home>\.WebIdeXX\config\commandlinetools```
+
+For additional information on where to put PHPStorm configuration files check [http://www.jetbrains.com/phpstorm/webhelp/project-and-ide-settings.html](http://www.jetbrains.com/phpstorm/webhelp/project-and-ide-settings.html)
 
 Once the file is placed in the proper directory you can then open PHPStorm 6 and go to ```Preferences -> Command Line Tool Support``` there you will see the artisan tool. Make sure that it is enabled.
 
